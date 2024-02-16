@@ -31,20 +31,20 @@ header{
     clear:both;
 }
 
-a{
-    text-decoration: none;
-    color: var(--black);
-    display: inline-block;
-    padding: 0 1rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
 /* Utility */
 
 .container{
     width: 70%;
     margin: auto;
+}
+
+.actions{
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 [class^="col-"]{
@@ -55,26 +55,17 @@ a{
 }
 
 .row{
-    background-color: coral;
     margin:auto;
 }
 
 .col-33{
     width: 33%;
-    background-color: pink;
-    border: 2px solid black;
     margin-top: 8px;
 }
 
 .col-100{
     width: 100%;
-    background-color: darkgreen;
     margin: 10px 0;
-}
-
-.title{
-    background-color: chartreuse;
-    height: 100px;
 }
 
 /* Text */
@@ -96,8 +87,9 @@ ul.inline-list>li{
 .btn{
     display: inline-block;
     background-color: transparent;
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem
 }
 
 .btn-primary{
@@ -109,6 +101,7 @@ ul.inline-list>li{
 
 .navbar .logo>img{
     vertical-align: sub;
+    height: 30px;
 }
 /* #endregion header */
 
@@ -117,58 +110,205 @@ ul.inline-list>li{
 /* #region section head */
 
 .head{
-    height: 400px;
-    background-color: bisque;
+    height: 750px;
+    background-color:var(--primary-color);
+    padding: 1.5rem;
 }
 
-h1{
-    height: 150px;
+.head h1{
     width: 80%;
-    background-color: aqua;
-    margin:auto;
+    margin: auto;
+    font-size: 5rem;
+    font-weight: 700;
+    word-spacing: 10px;
+    padding: 2rem 0;
 }
 
-.head .col-left{
-    background-color: chocolate;
-    height: 250px;
+.head>.row{
+    width:80%;
+    padding-top: 1.5rem;
 }
-
-.head .col-right{
-    background-color:cadetblue;
+.head>.row>.col-50{
     height: 300px;
+    width: 40%;
+    position: relative;
+}
+
+.head .text{
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: absolute;
+    left: 35%;
+}
+
+.text>p{
+    padding:20px 0;
+}
+
+.text>.arrow{
+    font-size: 3rem;
+}
+
+.img-jumbo>img{
+    height: 550px;
+    width: 900px;
 }
 /* #endregion section head */
 
 /* #region section plane */
 
 .plane{
-    height: 1000px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
+
+.plane h1{
+    font-size: 3.5rem;
+    padding: 20px;
+    font-weight: 500;
+    word-spacing: 10px;
+}
+
+.plane .input{
+    padding: 20px;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+input{
+    height: 20px;
+    width: 20px;
+}
+
 .plane>.row{
-    height: 900px;
+    height: 1500px;
 }
 
 .plane .col-33{
-    height: 650px;
+    height: 1200px;
 }
 
 .plane .col-100{
-    height: 200px;
+    height: 250px;
 }
 
+.box{
+    height: 100%;
+    border: 1px solid rgb(218, 218, 218);
+    width: 90%;
+}
+
+.option{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 15px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.content{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.content>div{
+    padding: 15px 20px;
+    position: relative;
+}
+.period{
+    color:rgb(171, 170, 170);
+}
+hr{
+    width: 20%;
+    margin:20px 0;
+}
+.content>.actions{
+    font-size: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.buy>a {
+    text-decoration: underline;
+    color: var(--button-color);
+}
+
+.content .icon,
+.content .text{
+    float:left;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.content.icon{
+    width: 10%;
+}
+
+.content .text{
+    width: 80%;
+}
+
+.plane .col-100>.box{
+    width: 96%;
+}
+
+.contact .col-left>div{
+    padding: 15px 0;
+}
+
+.contact .col-left{
+    width: 60%;
+}
+.contact .col-right{
+    width: 40%;
+}
+
+.contact .col-left .caption{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.contact .col-right .btn{
+    padding: 0.5rem 5rem;
+}
 
 /* #endregion section plane */
 
 /* #region section partner */
 .partner{
-    height: 300px;
+    height: 500px;
     margin: 20px 0;
 }
 
 .partner>.col-left,
 .partner>.col-right{
     height: 100%;
+}
+
+.img-partner>img{
+    width: 100%;
+    height: 100%;
+}
+
+.partner>.right{
+    padding:0 100px;
+}
+
+.partner h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.partner p{
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.partner .btn{
+    border: 1px solid black;
+    margin-top:30px;
 }
 /* #endregion section partner */
 
