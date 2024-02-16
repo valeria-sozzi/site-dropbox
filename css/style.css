@@ -1,0 +1,267 @@
+/* Common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:rgba(179,208,231,255);
+    --button-color: rgba(0,97,254,255);
+    --green:rgba(162,211,155,255);
+    --brown:rgba(97,9,43,255);
+    --sky-blue:rgba(0,147,206,255);
+    --orange:rgba(213,0,31,255);
+    --red:rgba(213,0,31,255);
+    --dark-blue:rgba(12,36,129,255);
+    --yellow:rgba(255,216,49,255);
+    --black:rgba(0,0,0,255);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* Utility */
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+.col-left{
+    background-color: var(--button-color);
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.col-right{
+    background-color: blueviolet;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.row{
+    background-color: coral;
+    margin:auto;
+}
+
+.col-33{
+    width: 32%;
+    background-color: pink;
+    float: left;
+    border: 2px solid black;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.col-100{
+    width: 100%;
+    background-color: darkgreen;
+    float: left;
+    margin: 10px 0;
+}
+
+.title{
+    background-color: chartreuse;
+    height: 100px;
+}
+
+
+/* #region header */
+
+.navbar{
+    height: 100%;
+}
+
+.navbar>.col-left,
+.navbar>.col-right{
+    height: 100%;
+}
+/* #endregion header */
+
+/* #region main */
+
+/* #region section head */
+
+.head{
+    height: 400px;
+    background-color: bisque;
+}
+
+h1{
+    height: 150px;
+    width: 80%;
+    background-color: aqua;
+    margin:auto;
+}
+
+.head .col-left{
+    background-color: chocolate;
+    height: 250px;
+}
+
+.head .col-right{
+    background-color:cadetblue;
+    height: 300px;
+}
+/* #endregion section head */
+
+/* #region section plane */
+
+.plane{
+    height: 1000px;
+    margin-top: 100px;
+}
+.plane>.row{
+    height: 900px;
+}
+
+.plane .col-33{
+    height: 650px;
+}
+
+.plane .col-100{
+    height: 200px;
+}
+
+
+/* #endregion section plane */
+
+/* #region section partner */
+.partner{
+    height: 300px;
+    margin: 20px 0;
+}
+
+.partner>.col-left,
+.partner>.col-right{
+    height: 100%;
+}
+/* #endregion section partner */
+
+/* #region section operation */
+.operation>.row{
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.operation .col-33{
+    height: 48%;
+}
+/* #endregion section operation */
+
+/* #region section client */
+.client{
+    height: 100px;
+    margin-bottom: 20px;
+}
+/* #endregion section client */
+
+/* #region section company */
+.company{
+    height: 400px;
+}
+
+.company>.row{
+    height: 100%;
+}
+.company .col-33{
+    height: 100%;
+    margin:0;
+}
+.col-34{
+    width: 36%;
+    height: 100%;
+    background-color: pink;
+    float: left;
+    border: 2px solid black;
+
+}
+
+.blocks{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.designit{
+    background-color: var(--green);
+}
+
+.asu{
+    background-color: var(--brown);
+}
+
+.uf{
+    background-color: var(--sky-blue);
+}
+.topps{
+    background-color: var(--orange);
+}
+
+.wbr{
+    background-color: var(--red);
+}
+
+.hearst{
+    background-color: var(--primary-color);
+}
+
+.lp{
+    background-color: var(--dark-blue);
+}
+
+.cco{
+    background-color: var(--yellow);
+}
+/* #endregion section company */
+
+/* #region section try */
+.try{
+    height: 100px;
+}
+
+/* #endregion section try */
+
+/* #region section faq */
+.faq{
+    height: 400px;
+}
+
+.faq>.col-100{
+    background-color: deeppink;
+    height: 100%;
+}
+/* #endregion section faq */
+
+/* #endregion main */
+
+/* #region footer */
+footer{
+    background-color: var(--black);
+    height: 400px;
+}
+
+footer>.row{
+    width: 70%;
+    margin:auto;
+    height: 400px;
+}
+footer .col-20{
+    width:20%;
+    height: 100%;
+    background-color:lightseagreen;
+    float: left;
+    border: 2px solid black;
+}
+/* #endregion footer */
