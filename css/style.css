@@ -250,6 +250,14 @@ hr{
     width: 80%;
 }
 
+.check>.icon{
+    color: var(--button-color);
+}
+
+.check:hover{
+    background-color: rgb(244 244 244);
+}
+
 .plane .col-100>.box{
     width: 96%;
 }
