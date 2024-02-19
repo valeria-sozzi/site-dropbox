@@ -17,6 +17,7 @@
     --dark-blue:rgba(12,36,129,255);
     --yellow:rgba(255,216,49,255);
     --black:rgba(0,0,0,255);
+    --border:rgb(218, 218, 218);
 }
 
 header{
@@ -473,14 +474,15 @@ hr{
 
 /* #region section faq */
 .faq{
-    height: 1000px;
+    height: 700px;
 }
 
 .faq>.col-100{
     height: 100%;
+    margin-bottom: 40px;
 }
 .faq .title>h1{
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 .question-row{
     border-top:1px solid rgb(218, 218, 218);
@@ -491,7 +493,7 @@ hr{
 }
 .question>.icons{
     display: inline-block;
-    float:right;  
+    float: right;  
     font-size: 20px;
     padding:40px 0;
 }
@@ -507,6 +509,7 @@ hr{
 
 .question-row:hover .answer{
     display: block;
+
 }
 
 .question-row:last-child{
@@ -519,18 +522,57 @@ hr{
 /* #region footer */
 footer{
     background-color: var(--black);
-    height: 400px;
+    height: 500px;
+    color: white;
 }
 
 footer>.row{
-    width: 70%;
+    width: 65%;
     margin:auto;
-    height: 400px;
+    height: 100%;
 }
 footer .col-20{
     width:20%;
-    height: 100%;
-    background-color:lightseagreen;
-    border: 2px solid black;
+    height: 75%;
+    padding: 30px 0;
+}
+
+#site-footer ul{
+    list-style: none;
+}
+
+#site-footer .actions{
+    color: white;
+    padding-left: 0;
+    padding-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#site-footer h3{
+    font-size: 1.3rem;
+}
+
+#site-footer hr{
+    color: var(--border);
+    line-height: 1px;
+    width: 150px;
+}
+
+.leng{
+    color: rgb(128 128 128);
+    margin-top: 60px;
+}
+.leng>i{
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+.leng select{
+    background-color: var(--black);
+    color: rgb(83 83 83);
+    font-size: 1.1rem;
+    border: none;
+
 }
 /* #endregion footer */
