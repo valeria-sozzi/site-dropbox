@@ -457,7 +457,7 @@ hr{
 .try .title>h1{
     font-size: 2.3rem;
     color: var(--brown);
-    padding: 20px 100px 0 60px;
+    padding: 20px 150px 0 0;
     font-weight: 700;
 }
 
@@ -473,12 +473,44 @@ hr{
 
 /* #region section faq */
 .faq{
-    height: 400px;
+    height: 1000px;
 }
 
 .faq>.col-100{
-    background-color: deeppink;
     height: 100%;
+}
+.faq .title>h1{
+    margin-bottom: 40px;
+}
+.question-row{
+    border-top:1px solid rgb(218, 218, 218);
+}
+.question>h3{
+    display: inline-block;
+    padding:40px 0;
+}
+.question>.icons{
+    display: inline-block;
+    float:right;  
+    font-size: 20px;
+    padding:40px 0;
+}
+.question-row>.answer{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 25px;
+    padding-right: 100px;
+    color: gray;
+    display: none;
+    padding-bottom:40px;
+}
+
+.question-row:hover .answer{
+    display: block;
+}
+
+.question-row:last-child{
+    border-bottom: 1px solid rgb(218, 218, 218);
 }
 /* #endregion section faq */
 
