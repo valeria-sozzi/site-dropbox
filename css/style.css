@@ -22,8 +22,7 @@
 
 header{
     width: 100%;
-    height: 70px;
-    padding: 1rem;
+    padding: 0 1rem ;
 }
 
 ::after{
@@ -77,7 +76,7 @@ ul.inline-list{
 
 ul.inline-list>li{
     display: inline-block;
-    padding: 0.5rem;
+    padding:1rem 0.5rem;
 }
 
 .text-right{
@@ -97,7 +96,6 @@ ul.inline-list>li{
     background-color: transparent;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    margin: 0.5rem
 }
 
 .btn-primary{
@@ -108,8 +106,66 @@ ul.inline-list>li{
 /* #region header */
 
 .navbar .logo>img{
-    vertical-align: sub;
     height: 30px;
+    vertical-align: sub;
+}
+
+.navbar{
+    position: relative;
+    height: 100%;
+}
+.nav-item{
+    height: 100%;
+}
+
+.navbar .col-50{
+    height: 100%;
+}
+.menu{
+    width: 800px;
+    height: 450px;
+    display:none;
+    background-color: var(--border);
+    position: absolute;
+    left: 188px;
+    bottom: -450px;
+}
+
+.functions{
+    width: 300px;
+    float: left;
+}
+.functions>ul{
+    list-style: none;
+}
+.functions>h3{
+    padding: 10px 25px;
+}
+
+.division{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black);
+    padding-left: 25px;
+    line-height: 35px;
+}
+
+.nav-item:hover .menu,
+.menu:hover {
+    display: block;
+    z-index: 1000;
+}
+
+.functions li:hover{
+    background-color: rgb(193, 193, 193);
+}
+
+.nav-item>a:hover{
+    text-decoration: underline;
+}
+.nav-item:hover{
+    background-color: var(--border);
 }
 /* #endregion header */
 
